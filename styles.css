@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Lexend Deca",sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    width: 375px;
+    height: auto;
+    margin: 50px ;
+}
+
+.container article {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.container h1 {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+
+.container p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+
+.container .yellowbox {
+    background-color: hsl(31, 77%, 52%);      
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.container .greenbox {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.container .darkbox {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 0.5rem ;
+    border-bottom-left-radius:0.5rem ;
+}
+
+.container .yellowbox button {
+    color: hsl(31, 77%, 52%);
+}
+
+.container .greenbox button {
+    color: hsl(184, 100%, 22%);
+}
+
+.container .darkbox button {
+    color: hsl(179,100%,13%);
+}
+
+.container button {
+    font-family: "Lexend Deca",sans-serif;
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    
+}
+
+@media (min-width: 1125px ) {
+
+    body {
+        height: 100vh;
+    }
+    
+    .container {
+        display: flex;
+        width: 800px;
+        height: 550px;
+    }
+
+    .container button {
+        margin-top: 8rem;
+    }
+
+    .container .yellowbox {
+        border-top-right-radius: 0px ;
+        border-bottom-left-radius:0.5rem ;
+    }
+
+    .container .darkbox {
+        border-bottom-left-radius: 0px ;
+        border-top-right-radius:0.5rem ;
+    }
+}
